@@ -1,0 +1,266 @@
+.header-container{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--color);
+    padding: 2vh;
+    background-color: white;
+    z-index: +9000;
+   
+}
+
+.header-container li{
+    list-style: none;
+    margin: 5px;
+    font-size: large;
+    font-family: var(--font)
+}
+
+.header-container li a{
+    text-decoration: none;
+    color: var(--color);
+}
+
+.container-one{
+    text-align: center;
+    height: auto;
+    width: 100%;
+    padding-top: 15vh;
+}
+
+.container-one h1{
+    color: var(--color);
+    font-family: var(--font);
+    font-size: 100px;
+}
+
+.container-one p{
+    color: black;
+    font-family: var(--font);
+}
+
+.container-one button{
+    padding: 2vh 7vh;
+    font-size: larger;
+    border-radius: 15px;
+    border: 1px solid var(--color);
+    color: var(--color);
+    margin-top: 5vh;
+    background-color: white;
+    transition: .3s linear;
+}
+
+
+.container-one button:hover{
+    border: 5px solid var(--color);
+    background-color: var(--color);
+    color: white;
+}
+
+.container-two{
+    width: 100%;
+    background-color: var(--color);
+    text-align: left;
+    height: auto;
+    padding: 2vh;
+    margin-top: 10vh;
+}
+
+.container-two h1,
+.container-three h1,
+.container-four h1,
+.container-five h1{
+    text-align: center;
+    color: white;
+    font-family: var(--font);
+}
+
+.container-two ul li{
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    color: black;
+    font-family: var(--font);
+    font-size: xx-large;
+    text-align: center;
+    transition: .3s linear;
+    list-style: none;
+}
+.container-two ul li i{
+    color: var(--color);
+}
+.container-two ul li:hover i{
+    color: white;
+}
+.container-two ul li:hover{
+    color: white;
+}
+
+.container-three{
+    width: 100%;
+    text-align: center;
+    height: auto;
+    padding: 2vh;
+    margin-top: 10vh;
+}
+
+.container-three h1{
+    color: var(--color);
+}
+
+.three-gallery{
+    width:60%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.three-gallery div{
+    width:200px;
+    height: auto;
+    margin-bottom: 10vh;
+    
+}
+
+.three-gallery div p{
+    background-color: var(--color);
+    padding: 2vh;
+    font-size: large;
+    font-family: var(--font);
+    margin-bottom: 5vh;
+    border-radius: 10px;
+}
+
+.three-gallery div span{
+    background-color: var(--color);
+    padding: 3vh;
+    border-radius: 100%;
+}
+
+.three-gallery div span i{
+    color:black;
+    font-size:x-large;
+}
+
+.three-gallery div span:hover{
+    border: 2px solid var(--color);
+    background-color: white;
+}
+
+.container-four h1{
+    color: var(--color);
+}
+
+.container-four{
+    width: 100%;
+    text-align: center;
+    height: auto;
+    padding: 2vh;
+    margin-top: 10vh;
+}
+
+.container-four p{
+    width: 60%;
+    padding: 2vh;
+    font-family: var(--font);
+    margin: auto;
+    background-color: var(--color);
+    border-radius: 15px;
+}
+
+.container-four p span{
+    color: white;
+    text-decoration: underline;
+    font-size: large;
+}
+
+.container-five{
+    width: 100%;
+    text-align: center;
+    height: auto;
+    padding: 2vh;
+    margin-top: 10vh;
+}
+.container-five h1{
+    color: var(--color);
+}
+
+.container-five .pricing{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.topic_price{
+    font-size: large;
+    font-family: var(--font);
+    color: var(--color);
+}
+
+.advance,
+.standard{
+    border: 2px dashed var(--color);
+    padding: 5vh 2vh;
+    border-radius: 15px;
+    font-size: large;
+    font-family: var(--font);
+    margin-top: 5vh;
+}
+.advance span,
+.standard span{
+    color: var(--color);
+}
+.summarry ul {
+    list-style-type: none;
+}
+
+.container-five .pricing ul li{
+    padding-bottom: 5px;
+    padding-top: 4px;
+}
+
+.container-five .pricing ul li:hover{
+    border-bottom: 2px solid var(--color);
+}
+
+@media  screen and (max-width:800px){
+    .header-container{
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 2px solid var(--color);
+        padding: 2vh;
+    }
+    .header-container li{
+        margin: 2px;
+        font-size: 16px;
+    }
+    .container-one h1{
+        font-size: 60px;
+        padding: 2vh;
+    }
+    .container-two ul li{
+        font-size: large;
+    }
+    .three-gallery{
+        width:80%;
+    }
+    .three-gallery div{
+        width:300px;
+    }
+    .container-four p{
+        width: 100%;
+    }
+    .container-five .pricing{
+        width: 90%;
+    }
+
+}

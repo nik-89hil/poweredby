@@ -1,13 +1,14 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Edu+NSW+ACT+Foundation:wght@500&family=Inconsolata:wght@200;500&family=Kalam&family=Lobster&family=Noto+Sans:ital@1&family=Noto+Serif+Khitan+Small+Script&family=Satisfy&family=Signika:wght@500&family=Tilt+Prism&family=Ysabeau+Infant:ital,wght@1,500&display=swap');
+
+:root{
+    --color:rgb(221, 126, 238);
+    --font:'Borel', cursive;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
